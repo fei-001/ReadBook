@@ -1,3 +1,10 @@
++++
+title = 'Hugo+github博客搭建'
+date = 2025-04-27T15:58:34+08:00
+draft = true
+
++++
+
 ## hego+github实现个人博客部署
 
 **参考B站博主Letere-莱特雷**
@@ -6,7 +13,7 @@
 
 [Release v0.131.0 · gohugoio/hugo](https://github.com/gohugoio/hugo/releases/tag/v0.131.0)
 
-![image-20250427101517633](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20250427101517633.png)
+![image-20250427101517633](index.assets/image-20250427101517633.png)
 
  **从hugo目录进入cmd并创建一个dev文件夹**
 
@@ -14,7 +21,7 @@
 hugo new site dev
 ```
 
-![image-20250427101823336](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20250427101823336.png)
+![image-20250427101823336](index.assets/image-20250427101823336.png)
 
 可参考：
 
