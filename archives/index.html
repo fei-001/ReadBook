@@ -1,177 +1,174 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><script src="/ReadBook/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=ReadBook/livereload" data-no-instant defer></script><meta charset='utf-8'>
+    <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="">
 <title>归档</title>
 
-<link rel='canonical' href='http://localhost:1313/ReadBook/archives/'>
+<link rel='canonical' href='https://fei-001.github.com.io/ReadBook/archives/'>
 
 <link rel="stylesheet" href="/ReadBook/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="归档">
 <meta property='og:description' content="">
-<meta property='og:url' content='http://localhost:1313/ReadBook/archives/'>
+<meta property='og:url' content='https://fei-001.github.com.io/ReadBook/archives/'>
 <meta property='og:site_name' content='LuMingFei'>
 <meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:published_time' content='2019-05-28T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2019-05-28T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="归档">
 <meta name="twitter:description" content="">
     <link rel="shortcut icon" href="/favicon.ico" />
-
-  
-
 <div class="loading">
-     
- <div class="loader">
-   <div class="loading-text">
-     Loading<span class="dot">.</span><span class="dot">.</span
-     ><span class="dot">.</span>
-   </div>
-   <div class="loading-bar-background">
-     <div class="loading-bar">
-       <div class="white-bars-container">
-         <div class="white-bar"></div>
-         <div class="white-bar"></div>
-         <div class="white-bar"></div>
-         <div class="white-bar"></div>
-         <div class="white-bar"></div>
-         <div class="white-bar"></div>
-         <div class="white-bar"></div>
-         <div class="white-bar"></div>
-         <div class="white-bar"></div>
-         <div class="white-bar"></div>
-       </div>
-     </div>
-   </div>
- </div>
- 
- </div>
- 
- <style>
-     .loading {
-         position: fixed;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         z-index: 99;
-         background-color: #f5f5fa;
-     }
-       
- .loader {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-   gap: 5px;
- }
- 
- .loading-text {
-   color: white;
-   font-size: 14pt;
-   font-weight: 600;
-   margin-left: 10px;
- }
- 
- .dot {
-   margin-left: 3px;
-   animation: blink 1.5s infinite;
- }
- .dot:nth-child(2) {
-   animation-delay: 0.3s;
- }
- 
- .dot:nth-child(3) {
-   animation-delay: 0.6s;
- }
- 
- .loading-bar-background {
-   --height: 30px;
-   display: flex;
-   align-items: center;
-   box-sizing: border-box;
-   padding: 5px;
-   width: 200px;
-   height: var(--height);
-   background-color: #212121  ;
-   box-shadow: #0c0c0c -2px 2px 4px 0px inset;
-   border-radius: calc(var(--height) / 2);
- }
- 
- .loading-bar {
-   position: relative;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   --height: 20px;
-   width: 0%;
-   height: var(--height);
-   overflow: hidden;
-   background: rgb(222, 74, 15);
-   background: linear-gradient(
-     0deg,
-     rgba(222, 74, 15, 1) 0%,
-     rgba(249, 199, 79, 1) 100%
-   );
-   border-radius: calc(var(--height) / 2);
-   animation: loading 4s ease-out infinite;
- }
- 
- .white-bars-container {
-   position: absolute;
-   display: flex;
-   align-items: center;
-   gap: 18px;
- }
- 
- .white-bar {
-   background: rgb(255, 255, 255);
-   background: linear-gradient(
-     -45deg,
-     rgba(255, 255, 255, 1) 0%,
-     rgba(255, 255, 255, 0) 70%
-   );
-   width: 10px;
-   height: 45px;
-   opacity: 0.3;
-   rotate: 45deg;
- }
- 
- @keyframes loading {
-   0% {
-     width: 0;
-   }
-   80% {
-     width: 100%;
-   }
-   100% {
-     width: 100%;
-   }
- }
- 
- @keyframes blink {
-   0%,
-   100% {
-     opacity: 0;
-   }
-   50% {
-     opacity: 1;
-   }
- }
+  <div class="sharingon">
+      <div class="ring">
+          <div class="to"></div>
+          <div class="to"></div>
+          <div class="to"></div>
+          <div class="circle"></div>
+      </div>
+  </div>
+</div>
+
+<style>
+  .loading {
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 99;
+      zoom: 3.0;
+      background-color: #f5f5fa;
+  }
+
+  .animated-stop {
+      animation-play-state: paused !important;
+  }
+
+  .scaleAndFadeout {
+      animation: scaleAndFadeOut 1.5s forwards;
+  }
+
    
- </style>
- 
- <script>	
-     function initLoading() {
-         let loading = document.querySelector(".loading");
-         document.addEventListener('DOMContentLoaded', function() {
-             
-             loading.style.display = "none";
-         });
-     }
- 
-     initLoading();
- </script>
+  @keyframes scaleAndFadeOut {
+      0% {
+          transform: scale(1);
+          opacity: 1;
+      }
+      100% {
+          transform: scale(1.5);
+          opacity: 0;
+      }
+  }
+
+   
+  .sharingon {
+      position: relative;
+      width: 6em;
+      height: 6em;
+      background-color: red;
+      border: 6px solid black;
+      animation: rot 1s ease-in-out infinite;
+  }
+
+  .ring {
+      position: absolute;
+      content: "";
+      left: 50%;
+      top: 50%;
+      width: 3.5em;
+      height: 3.5em;
+      border: 4px solid rgb(110, 13 ,13 ,0.5);
+      transform: translate(-50%,-50%);
+  }
+
+  .sharingon, .ring, .to,.circle {
+      border-radius: 50%;
+  }
+
+  .to,.circle {
+      position: absolute;
+      content: "";
+      width: 0.9em;
+      height: 0.9em;
+      background-color: black;
+  }
+
+  .to:nth-child(1) {
+      top: -0.5em;
+      left: 50%;
+      transform: translate(-40%);
+  }
+
+  .to::before {
+      content: "";
+      position: absolute;
+      top: -0.5em;
+      right: -0.2em;
+      width: 1.1em;
+      height: 0.9em;
+      box-sizing: border-box;
+      border-left: 16px solid black;
+      border-radius: 100% 0 0;
+  }
+
+  .to:nth-child(2) {
+      bottom: 0.5em;
+      left: -0.35em;
+      transform: rotate(-120deg);
+  }
+
+  .to:nth-child(3) {
+      bottom: 0.5em;
+      right: -0.35em;
+      transform: rotate(120deg);
+  }
+
+  .circle {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      box-shadow: 0 0 20px 1px;
+      width: 1em;
+      height: 1em;
+  }
+
+  @keyframes rot {
+      0% {
+          transform: rotate(0deg);
+      }
+
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+</style>
+
+<script>	
+  function initLoading() {
+      let loading = document.querySelector(".loading");
+      document.addEventListener('DOMContentLoaded', function() {
+          
+          
+          loadFinish();
+          
+          setTimeout(() => {
+              loading.style.display = "none";
+          }, 1500)
+      });
+  }
+
+  function loadFinish() {
+      
+      let sharingon= document.querySelector(".sharingon");
+      sharingon.classList.add("animated-stop")
+      
+      let loading = document.querySelector(".loading");
+      loading.classList.add("scaleAndFadeout")
+  }
+
+  initLoading();
+</script>
+
     </head>
     <body class="template-archives">
     <script>
@@ -213,7 +210,7 @@
                     
                     
                         
-                        <img src="/ReadBook/img/avatar_hu634108919962951486.png" width="300"
+                        <img src="/ReadBook/img/avatar_hu_adfcc394e6cdf2db.png" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -406,7 +403,7 @@
         
         
             <div class="article-image">
-                <img src="/ReadBook/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.bec89fe99958d89413edc0f93688bdd6_hu12733615224671643161.jpg" 
+                <img src="/ReadBook/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.bec89fe99958d89413edc0f93688bdd6_hu_48d530dec33c2396.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -424,58 +421,6 @@
 </article>
 
                 
-                    
-<article class="">
-    <a href="/ReadBook/categories/%E6%B5%8B%E8%AF%95/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">测试</h2>
-        </div>
-    </a>
-</article>
-
-                
-                    
-<article class="">
-    <a href="/ReadBook/categories/syntax/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Syntax</h2>
-        </div>
-    </a>
-</article>
-
-                
-                    
-<article class="">
-    <a href="/ReadBook/categories/themes/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Themes</h2>
-        </div>
-    </a>
-</article>
-
-                
-                    
-<article class="">
-    <a href="/ReadBook/categories/test-with-whitespaces/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Test With Whitespaces</h2>
-        </div>
-    </a>
-</article>
-
-                
             </div>
         </div>
         
@@ -487,51 +432,23 @@
 
     
     
-    <div class="archives-group" id="2020">
-        <h2 class="archives-date section-title"><a href="/ReadBook/archives/#2020">2020</a></h2>
+    <div class="archives-group" id="2025">
+        <h2 class="archives-date section-title"><a href="/ReadBook/archives/#2025">2025</a></h2>
         <div class="article-list--compact">
             
                 <article>
-    <a href="/ReadBook/p/test-chinese/">
+    <a href="/ReadBook/p/%E6%A8%A1%E6%9D%BF/">
         <div class="article-details">
-            <h2 class="article-title">Chinese Test</h2>
+            <h2 class="article-title">模板</h2>
             <footer class="article-time">
-                <time datetime='2020-09-09T00:00:00Z'>2020-09-09</time>
+                <time datetime='2025-05-06T10:18:26&#43;08:00'>2025-05-06</time>
             </footer>
         </div>
             <div class="article-image">
-                <img src="/ReadBook/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu4699868770670889127.jpg" 
+                <img src="/ReadBook/p/%E6%A8%A1%E6%9D%BF/Snipaste_2025-05-06_10-24-02_hu_77a45112e8db811.png" 
                         width="120"
                         height="120" 
-                        alt="Chinese Test"
-                        loading="lazy">
-                
-            </div>
-        
-    </a>
-</article>
-            
-        </div>
-    </div>
-    
-    
-    <div class="archives-group" id="2019">
-        <h2 class="archives-date section-title"><a href="/ReadBook/archives/#2019">2019</a></h2>
-        <div class="article-list--compact">
-            
-                <article>
-    <a href="/ReadBook/p/markdown-syntax-guide/">
-        <div class="article-details">
-            <h2 class="article-title">Markdown Syntax Guide</h2>
-            <footer class="article-time">
-                <time datetime='2019-03-11T00:00:00Z'>2019-03-11</time>
-            </footer>
-        </div>
-            <div class="article-image">
-                <img src="/ReadBook/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash_hu6307248181568134095.jpg" 
-                        width="120"
-                        height="120" 
-                        alt="Markdown Syntax Guide"
+                        alt="模板"
                         loading="lazy">
                 
             </div>
@@ -540,18 +457,18 @@
 </article>
             
                 <article>
-    <a href="/ReadBook/p/placeholder-text/">
+    <a href="/ReadBook/p/docker%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">
         <div class="article-details">
-            <h2 class="article-title">Placeholder Text</h2>
+            <h2 class="article-title">Docker安装教程</h2>
             <footer class="article-time">
-                <time datetime='2019-03-09T00:00:00Z'>2019-03-09</time>
+                <time datetime='2025-04-28T14:01:21&#43;08:00'>2025-04-28</time>
             </footer>
         </div>
             <div class="article-image">
-                <img src="/ReadBook/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash_hu10664154974910995856.jpg" 
+                <img src="/ReadBook/p/docker%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/u=3293789526,3825376710&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG_hu_3e55288c8b4bbb45.webp" 
                         width="120"
                         height="120" 
-                        alt="Placeholder Text"
+                        alt="Docker安装教程"
                         loading="lazy">
                 
             </div>
@@ -560,29 +477,98 @@
 </article>
             
                 <article>
-    <a href="/ReadBook/p/math-typesetting/">
+    <a href="/ReadBook/p/anything-llm-%E4%B8%AA%E4%BA%BA%E7%9F%A5%E8%AF%86%E5%BA%93/">
         <div class="article-details">
-            <h2 class="article-title">Math Typesetting</h2>
+            <h2 class="article-title">Anything LLM 个人知识库</h2>
             <footer class="article-time">
-                <time datetime='2019-03-08T00:00:00Z'>2019-03-08</time>
+                <time datetime='2025-04-28T14:01:21&#43;08:00'>2025-04-28</time>
             </footer>
         </div>
+            <div class="article-image">
+                <img src="/ReadBook/p/anything-llm-%E4%B8%AA%E4%BA%BA%E7%9F%A5%E8%AF%86%E5%BA%93/Snipaste_2025-04-30_17-52-48_hu_49f9c2b3333ac8f7.png" 
+                        width="120"
+                        height="120" 
+                        alt="Anything LLM 个人知识库"
+                        loading="lazy">
+                
+            </div>
+        
     </a>
 </article>
             
                 <article>
-    <a href="/ReadBook/p/emoji-support/">
+    <a href="/ReadBook/p/%E4%BC%98%E7%BE%8E%E8%AF%97%E5%8F%A5%E6%91%98%E8%A6%81/">
         <div class="article-details">
-            <h2 class="article-title">Emoji Support</h2>
+            <h2 class="article-title">优美诗句摘要</h2>
             <footer class="article-time">
-                <time datetime='2019-03-05T00:00:00Z'>2019-03-05</time>
+                <time datetime='2025-04-28T13:40:35&#43;08:00'>2025-04-28</time>
             </footer>
         </div>
             <div class="article-image">
-                <img src="/ReadBook/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash_hu5876398126655421130.jpg" 
+                <img src="/ReadBook/p/%E4%BC%98%E7%BE%8E%E8%AF%97%E5%8F%A5%E6%91%98%E8%A6%81/lihua_hu_ef78ec11ff8d2985.webp" 
                         width="120"
                         height="120" 
-                        alt="Emoji Support"
+                        alt="优美诗句摘要"
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+                <article>
+    <a href="/ReadBook/p/k8s%E9%83%A8%E7%BD%B2/">
+        <div class="article-details">
+            <h2 class="article-title">k8s部署</h2>
+            <footer class="article-time">
+                <time datetime='2025-04-28T13:40:35&#43;08:00'>2025-04-28</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/ReadBook/p/k8s%E9%83%A8%E7%BD%B2/u=2352181646,3434848427&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG_hu_25c8f525714c782e.webp" 
+                        width="120"
+                        height="120" 
+                        alt="k8s部署"
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+                <article>
+    <a href="/ReadBook/p/%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E8%AE%BF%E9%97%AEgithub/">
+        <div class="article-details">
+            <h2 class="article-title">简单配置访问github</h2>
+            <footer class="article-time">
+                <time datetime='2025-04-27T11:07:32&#43;08:00'>2025-04-27</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/ReadBook/p/%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E8%AE%BF%E9%97%AEgithub/67e1c599723d9d66a47d989d8ecb627a9629_hu_998fdce6f3ec3eb5.jpeg" 
+                        width="120"
+                        height="120" 
+                        alt="简单配置访问github"
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+                <article>
+    <a href="/ReadBook/p/ubunto%E4%B8%8A%E8%A3%85docker%E6%95%99%E7%A8%8B/">
+        <div class="article-details">
+            <h2 class="article-title">ubunto上装docker教程</h2>
+            <footer class="article-time">
+                <time datetime='2025-04-27T11:07:32&#43;08:00'>2025-04-27</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/ReadBook/p/ubunto%E4%B8%8A%E8%A3%85docker%E6%95%99%E7%A8%8B/u=3293789526,3825376710&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG_hu_3e55288c8b4bbb45.webp" 
+                        width="120"
+                        height="120" 
+                        alt="ubunto上装docker教程"
                         loading="lazy">
                 
             </div>
@@ -616,7 +602,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ReadBook/ts/main.b62deda5df88152e1706ad0feb4263fe5387007d38d7f4df7e3479ef8cc0da81.js" defer></script>
+            </script><script type="text/javascript" src="/ReadBook/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -639,7 +625,7 @@
 
 <script src=/ReadBook/background/particles.min.js></script>
 <script>
-  particlesJS.load('particles-js', "http://localhost:1313/ReadBook/background/particlesjs-config.json", function() {
+  particlesJS.load('particles-js', "https://fei-001.github.com.io/ReadBook/background/particlesjs-config.json", function() {
     console.log('particles.js loaded - callback');
   });
 </script>

@@ -1,22 +1,173 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><script src="/ReadBook/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=ReadBook/livereload" data-no-instant defer></script><meta charset='utf-8'>
+    <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="演示说明">
 <title>Posts</title>
 
-<link rel='canonical' href='http://localhost:1313/ReadBook/post/'>
+<link rel='canonical' href='https://fei-001.github.com.io/ReadBook/post/'>
 
 <link rel="stylesheet" href="/ReadBook/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Posts">
 <meta property='og:description' content="演示说明">
-<meta property='og:url' content='http://localhost:1313/ReadBook/post/'>
+<meta property='og:url' content='https://fei-001.github.com.io/ReadBook/post/'>
 <meta property='og:site_name' content='LuMingFei'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-04-28T11:28:08&#43;08:00 '/>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-05-06T10:18:26&#43;08:00 '/>
 <meta name="twitter:title" content="Posts">
-<meta name="twitter:description" content="演示说明"><link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/ReadBook/post/index.xml">
+<meta name="twitter:description" content="演示说明"><link rel="alternate" type="application/rss&#43;xml" href="https://fei-001.github.com.io/ReadBook/post/index.xml">
     <link rel="shortcut icon" href="/favicon.ico" />
+<div class="loading">
+  <div class="sharingon">
+      <div class="ring">
+          <div class="to"></div>
+          <div class="to"></div>
+          <div class="to"></div>
+          <div class="circle"></div>
+      </div>
+  </div>
+</div>
 
-  
+<style>
+  .loading {
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 99;
+      zoom: 3.0;
+      background-color: #f5f5fa;
+  }
 
+  .animated-stop {
+      animation-play-state: paused !important;
+  }
+
+  .scaleAndFadeout {
+      animation: scaleAndFadeOut 1.5s forwards;
+  }
+
+   
+  @keyframes scaleAndFadeOut {
+      0% {
+          transform: scale(1);
+          opacity: 1;
+      }
+      100% {
+          transform: scale(1.5);
+          opacity: 0;
+      }
+  }
+
+   
+  .sharingon {
+      position: relative;
+      width: 6em;
+      height: 6em;
+      background-color: red;
+      border: 6px solid black;
+      animation: rot 1s ease-in-out infinite;
+  }
+
+  .ring {
+      position: absolute;
+      content: "";
+      left: 50%;
+      top: 50%;
+      width: 3.5em;
+      height: 3.5em;
+      border: 4px solid rgb(110, 13 ,13 ,0.5);
+      transform: translate(-50%,-50%);
+  }
+
+  .sharingon, .ring, .to,.circle {
+      border-radius: 50%;
+  }
+
+  .to,.circle {
+      position: absolute;
+      content: "";
+      width: 0.9em;
+      height: 0.9em;
+      background-color: black;
+  }
+
+  .to:nth-child(1) {
+      top: -0.5em;
+      left: 50%;
+      transform: translate(-40%);
+  }
+
+  .to::before {
+      content: "";
+      position: absolute;
+      top: -0.5em;
+      right: -0.2em;
+      width: 1.1em;
+      height: 0.9em;
+      box-sizing: border-box;
+      border-left: 16px solid black;
+      border-radius: 100% 0 0;
+  }
+
+  .to:nth-child(2) {
+      bottom: 0.5em;
+      left: -0.35em;
+      transform: rotate(-120deg);
+  }
+
+  .to:nth-child(3) {
+      bottom: 0.5em;
+      right: -0.35em;
+      transform: rotate(120deg);
+  }
+
+  .circle {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      box-shadow: 0 0 20px 1px;
+      width: 1em;
+      height: 1em;
+  }
+
+  @keyframes rot {
+      0% {
+          transform: rotate(0deg);
+      }
+
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+</style>
+
+<script>	
+  function initLoading() {
+      let loading = document.querySelector(".loading");
+      document.addEventListener('DOMContentLoaded', function() {
+          
+          
+          loadFinish();
+          
+          setTimeout(() => {
+              loading.style.display = "none";
+          }, 1500)
+      });
+  }
+
+  function loadFinish() {
+      
+      let sharingon= document.querySelector(".sharingon");
+      sharingon.classList.add("animated-stop")
+      
+      let loading = document.querySelector(".loading");
+      loading.classList.add("scaleAndFadeout")
+  }
+
+  initLoading();
+</script>
 
     </head>
     <body class="">
@@ -59,7 +210,7 @@
                     
                     
                         
-                        <img src="/ReadBook/img/avatar_hu634108919962951486.png" width="300"
+                        <img src="/ReadBook/img/avatar_hu_adfcc394e6cdf2db.png" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -285,23 +436,7 @@
                     <a href="/ReadBook/archives/#2025">
                         
                             <span class="year">2025</span>
-                            <span class="count">2</span>
-                        
-                    </a> 
-                </div>
-            <div class="archives-year">
-                    <a href="/ReadBook/archives/#2020">
-                        
-                            <span class="year">2020</span>
-                            <span class="count">1</span>
-                        
-                    </a> 
-                </div>
-            <div class="archives-year">
-                    <a href="/ReadBook/archives/#2019">
-                        
-                            <span class="year">2019</span>
-                            <span class="count">4</span>
+                            <span class="count">7</span>
                         
                     </a> 
                 </div>
@@ -327,26 +462,6 @@
     <h2 class="widget-title section-title">分类</h2>
 
     <div class="tagCloud-tags">
-        
-            <a href="/ReadBook/categories/test/" class="font_size_3">
-                Test
-            </a>
-        
-            <a href="/ReadBook/categories/syntax/" class="font_size_1">
-                Syntax
-            </a>
-        
-            <a href="/ReadBook/categories/test-with-whitespaces/" class="font_size_1">
-                Test With Whitespaces
-            </a>
-        
-            <a href="/ReadBook/categories/themes/" class="font_size_1">
-                Themes
-            </a>
-        
-            <a href="/ReadBook/categories/%E6%B5%8B%E8%AF%95/" class="font_size_1">
-                测试
-            </a>
         
     </div>
 </section>
@@ -376,18 +491,18 @@
     <section class="article-list--compact">
         
             <article>
-    <a href="/ReadBook/p/emoji-support/">
+    <a href="/ReadBook/p/%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E8%AE%BF%E9%97%AEgithub/">
         <div class="article-details">
-            <h2 class="article-title">Emoji Support</h2>
+            <h2 class="article-title">简单配置访问github</h2>
             <footer class="article-time">
-                <time datetime='2019-03-05T00:00:00Z'>2019-03-05</time>
+                <time datetime='2025-04-27T11:07:32&#43;08:00'>2025-04-27</time>
             </footer>
         </div>
             <div class="article-image">
-                <img src="/ReadBook/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash_hu5876398126655421130.jpg" 
+                <img src="/ReadBook/p/%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E8%AE%BF%E9%97%AEgithub/67e1c599723d9d66a47d989d8ecb627a9629_hu_998fdce6f3ec3eb5.jpeg" 
                         width="120"
                         height="120" 
-                        alt="Emoji Support"
+                        alt="简单配置访问github"
                         loading="lazy">
                 
             </div>
@@ -437,7 +552,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ReadBook/ts/main.b62deda5df88152e1706ad0feb4263fe5387007d38d7f4df7e3479ef8cc0da81.js" defer></script>
+            </script><script type="text/javascript" src="/ReadBook/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -449,6 +564,32 @@
         document.head.appendChild(customFont);
     }());
 </script>
+<style>
+  body {
+    background: url('/ReadBook/background/OIP.jpg') no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+</style>
+<div id="particles-js"></div>
+
+<script src=/ReadBook/background/particles.min.js></script>
+<script>
+  particlesJS.load('particles-js', "https://fei-001.github.com.io/ReadBook/background/particlesjs-config.json", function() {
+    console.log('particles.js loaded - callback');
+  });
+</script>
+
+<style>
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+</style>
+
 
     </body>
 </html>

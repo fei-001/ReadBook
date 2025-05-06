@@ -2,79 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/ReadBook/</loc>
+    <loc>https://fei-001.github.com.io/ReadBook/</loc>
     <lastmod>2025-05-06T10:18:26+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ReadBook/post/</loc>
+    <loc>https://fei-001.github.com.io/ReadBook/post/</loc>
     <lastmod>2025-05-06T10:18:26+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ReadBook/categories/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <loc>https://fei-001.github.com.io/ReadBook/p/%E6%A8%A1%E6%9D%BF/</loc>
+    <lastmod>2025-05-06T10:18:26+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ReadBook/p/test-chinese/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <loc>https://fei-001.github.com.io/ReadBook/p/anything-llm-%E4%B8%AA%E4%BA%BA%E7%9F%A5%E8%AF%86%E5%BA%93/</loc>
+    <lastmod>2025-04-28T14:01:21+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ReadBook/categories/test/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <loc>https://fei-001.github.com.io/ReadBook/p/docker%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2025-04-28T14:01:21+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ReadBook/categories/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <loc>https://fei-001.github.com.io/ReadBook/p/k8s%E9%83%A8%E7%BD%B2/</loc>
+    <lastmod>2025-04-28T13:40:35+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ReadBook/page/</loc>
+    <loc>https://fei-001.github.com.io/ReadBook/p/%E4%BC%98%E7%BE%8E%E8%AF%97%E5%8F%A5%E6%91%98%E8%A6%81/</loc>
+    <lastmod>2025-04-28T13:40:35+08:00</lastmod>
+  </url><url>
+    <loc>https://fei-001.github.com.io/ReadBook/p/ubunto%E4%B8%8A%E8%A3%85docker%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2025-04-27T11:07:32+08:00</lastmod>
+  </url><url>
+    <loc>https://fei-001.github.com.io/ReadBook/p/%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E8%AE%BF%E9%97%AEgithub/</loc>
+    <lastmod>2025-04-27T11:07:32+08:00</lastmod>
+  </url><url>
+    <loc>https://fei-001.github.com.io/ReadBook/page/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ReadBook/archives/</loc>
+    <loc>https://fei-001.github.com.io/ReadBook/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ReadBook/tags/css/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://fei-001.github.com.io/ReadBook/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/ReadBook/tags/html/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://fei-001.github.com.io/ReadBook/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/ReadBook/tags/markdown/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://fei-001.github.com.io/ReadBook/categories/test/</loc>
   </url><url>
-    <loc>http://localhost:1313/ReadBook/p/markdown-syntax-guide/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://fei-001.github.com.io/ReadBook/%E5%85%B3%E4%BA%8E/</loc>
   </url><url>
-    <loc>http://localhost:1313/ReadBook/categories/syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://fei-001.github.com.io/ReadBook/search/</loc>
   </url><url>
-    <loc>http://localhost:1313/ReadBook/tags/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ReadBook/tags/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ReadBook/categories/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ReadBook/p/placeholder-text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ReadBook/tags/tag-with-whitespaces/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ReadBook/categories/test-with-whitespaces/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ReadBook/tags/text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ReadBook/p/math-typesetting/</loc>
-    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ReadBook/tags/emoji/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ReadBook/p/emoji-support/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ReadBook/%E5%85%B3%E4%BA%8E/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ReadBook/search/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ReadBook/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</loc>
+    <loc>https://fei-001.github.com.io/ReadBook/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</loc>
   </url>
 </urlset>
