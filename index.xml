@@ -342,8 +342,8 @@
         
         <guid>https://fei-001.github.com.io/ReadBook/p/123/</guid>
         <description>&lt;img src="https://fei-001.github.com.io/ReadBook/67e1c599723d9d66a47d989d8ecb627a9629.jpeg" alt="Featured image of post 123" /&gt;&lt;h2 id=&#34;简单配置访问github&#34;&gt;简单配置访问github
-&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;123&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/h2&gt;&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;123&lt;/p&gt;&lt;/blockquote&gt;
 </description>
         </item>
         <item>
