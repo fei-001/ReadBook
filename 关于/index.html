@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><meta charset='utf-8'>
+    <head><script src="/ReadBook/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=ReadBook/livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="This is a test page for i18n support.">
 <title>关于</title>
 
-<link rel='canonical' href='https://fei-001.github.com/ReadBook/%E5%85%B3%E4%BA%8E/'>
+<link rel='canonical' href='http://localhost:1313/ReadBook/%E5%85%B3%E4%BA%8E/'>
 
 <link rel="stylesheet" href="/ReadBook/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="关于">
 <meta property='og:description' content="This is a test page for i18n support.">
-<meta property='og:url' content='https://fei-001.github.com/ReadBook/%E5%85%B3%E4%BA%8E/'>
+<meta property='og:url' content='http://localhost:1313/ReadBook/%E5%85%B3%E4%BA%8E/'>
 <meta property='og:site_name' content='LuMingFei'>
 <meta property='og:type' content='article'><meta property='article:section' content='Page' />
 <meta name="twitter:title" content="关于">
@@ -17,7 +17,161 @@
 
   
 
-
+<div class="loading">
+     
+ <div class="loader">
+   <div class="loading-text">
+     Loading<span class="dot">.</span><span class="dot">.</span
+     ><span class="dot">.</span>
+   </div>
+   <div class="loading-bar-background">
+     <div class="loading-bar">
+       <div class="white-bars-container">
+         <div class="white-bar"></div>
+         <div class="white-bar"></div>
+         <div class="white-bar"></div>
+         <div class="white-bar"></div>
+         <div class="white-bar"></div>
+         <div class="white-bar"></div>
+         <div class="white-bar"></div>
+         <div class="white-bar"></div>
+         <div class="white-bar"></div>
+         <div class="white-bar"></div>
+       </div>
+     </div>
+   </div>
+ </div>
+ 
+ </div>
+ 
+ <style>
+     .loading {
+         position: fixed;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         z-index: 99;
+         background-color: #f5f5fa;
+     }
+       
+ .loader {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 5px;
+ }
+ 
+ .loading-text {
+   color: white;
+   font-size: 14pt;
+   font-weight: 600;
+   margin-left: 10px;
+ }
+ 
+ .dot {
+   margin-left: 3px;
+   animation: blink 1.5s infinite;
+ }
+ .dot:nth-child(2) {
+   animation-delay: 0.3s;
+ }
+ 
+ .dot:nth-child(3) {
+   animation-delay: 0.6s;
+ }
+ 
+ .loading-bar-background {
+   --height: 30px;
+   display: flex;
+   align-items: center;
+   box-sizing: border-box;
+   padding: 5px;
+   width: 200px;
+   height: var(--height);
+   background-color: #212121  ;
+   box-shadow: #0c0c0c -2px 2px 4px 0px inset;
+   border-radius: calc(var(--height) / 2);
+ }
+ 
+ .loading-bar {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   --height: 20px;
+   width: 0%;
+   height: var(--height);
+   overflow: hidden;
+   background: rgb(222, 74, 15);
+   background: linear-gradient(
+     0deg,
+     rgba(222, 74, 15, 1) 0%,
+     rgba(249, 199, 79, 1) 100%
+   );
+   border-radius: calc(var(--height) / 2);
+   animation: loading 4s ease-out infinite;
+ }
+ 
+ .white-bars-container {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   gap: 18px;
+ }
+ 
+ .white-bar {
+   background: rgb(255, 255, 255);
+   background: linear-gradient(
+     -45deg,
+     rgba(255, 255, 255, 1) 0%,
+     rgba(255, 255, 255, 0) 70%
+   );
+   width: 10px;
+   height: 45px;
+   opacity: 0.3;
+   rotate: 45deg;
+ }
+ 
+ @keyframes loading {
+   0% {
+     width: 0;
+   }
+   80% {
+     width: 100%;
+   }
+   100% {
+     width: 100%;
+   }
+ }
+ 
+ @keyframes blink {
+   0%,
+   100% {
+     opacity: 0;
+   }
+   50% {
+     opacity: 1;
+   }
+ }
+   
+ </style>
+ 
+ <script>	
+     function initLoading() {
+         let loading = document.querySelector(".loading");
+         document.addEventListener('DOMContentLoaded', function() {
+             
+             loading.style.display = "none";
+         });
+     }
+ 
+     initLoading();
+ </script>
     </head>
     <body class="
     article-page
@@ -415,7 +569,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ReadBook/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="/ReadBook/ts/main.b62deda5df88152e1706ad0feb4263fe5387007d38d7f4df7e3479ef8cc0da81.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -427,6 +581,32 @@
         document.head.appendChild(customFont);
     }());
 </script>
+<style>
+  body {
+    background: url('/ReadBook/background/OIP.jpg') no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+</style>
+<div id="particles-js"></div>
+
+<script src=/ReadBook/background/particles.min.js></script>
+<script>
+  particlesJS.load('particles-js', "http://localhost:1313/ReadBook/background/particlesjs-config.json", function() {
+    console.log('particles.js loaded - callback');
+  });
+</script>
+
+<style>
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+</style>
+
 
     </body>
 </html>

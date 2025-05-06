@@ -1,24 +1,178 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head>
-	<meta name="generator" content="Hugo 0.131.0"><meta charset='utf-8'>
+	<meta name="generator" content="Hugo 0.131.0"><script src="/ReadBook/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=ReadBook/livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="演示说明">
 <title>LuMingFei</title>
 
-<link rel='canonical' href='https://fei-001.github.com/ReadBook/'>
+<link rel='canonical' href='http://localhost:1313/ReadBook/'>
 
 <link rel="stylesheet" href="/ReadBook/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="LuMingFei">
 <meta property='og:description' content="演示说明">
-<meta property='og:url' content='https://fei-001.github.com/ReadBook/'>
+<meta property='og:url' content='http://localhost:1313/ReadBook/'>
 <meta property='og:site_name' content='LuMingFei'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-04-27T11:07:32&#43;08:00 '/>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-05-06T10:18:26&#43;08:00 '/>
 <meta name="twitter:title" content="LuMingFei">
-<meta name="twitter:description" content="演示说明"><link rel="alternate" type="application/rss&#43;xml" href="https://fei-001.github.com/ReadBook/index.xml">
+<meta name="twitter:description" content="演示说明"><link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/ReadBook/index.xml">
     <link rel="shortcut icon" href="/favicon.ico" />
 
   
 
-
+<div class="loading">
+     
+ <div class="loader">
+   <div class="loading-text">
+     Loading<span class="dot">.</span><span class="dot">.</span
+     ><span class="dot">.</span>
+   </div>
+   <div class="loading-bar-background">
+     <div class="loading-bar">
+       <div class="white-bars-container">
+         <div class="white-bar"></div>
+         <div class="white-bar"></div>
+         <div class="white-bar"></div>
+         <div class="white-bar"></div>
+         <div class="white-bar"></div>
+         <div class="white-bar"></div>
+         <div class="white-bar"></div>
+         <div class="white-bar"></div>
+         <div class="white-bar"></div>
+         <div class="white-bar"></div>
+       </div>
+     </div>
+   </div>
+ </div>
+ 
+ </div>
+ 
+ <style>
+     .loading {
+         position: fixed;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         z-index: 99;
+         background-color: #f5f5fa;
+     }
+       
+ .loader {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 5px;
+ }
+ 
+ .loading-text {
+   color: white;
+   font-size: 14pt;
+   font-weight: 600;
+   margin-left: 10px;
+ }
+ 
+ .dot {
+   margin-left: 3px;
+   animation: blink 1.5s infinite;
+ }
+ .dot:nth-child(2) {
+   animation-delay: 0.3s;
+ }
+ 
+ .dot:nth-child(3) {
+   animation-delay: 0.6s;
+ }
+ 
+ .loading-bar-background {
+   --height: 30px;
+   display: flex;
+   align-items: center;
+   box-sizing: border-box;
+   padding: 5px;
+   width: 200px;
+   height: var(--height);
+   background-color: #212121  ;
+   box-shadow: #0c0c0c -2px 2px 4px 0px inset;
+   border-radius: calc(var(--height) / 2);
+ }
+ 
+ .loading-bar {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   --height: 20px;
+   width: 0%;
+   height: var(--height);
+   overflow: hidden;
+   background: rgb(222, 74, 15);
+   background: linear-gradient(
+     0deg,
+     rgba(222, 74, 15, 1) 0%,
+     rgba(249, 199, 79, 1) 100%
+   );
+   border-radius: calc(var(--height) / 2);
+   animation: loading 4s ease-out infinite;
+ }
+ 
+ .white-bars-container {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   gap: 18px;
+ }
+ 
+ .white-bar {
+   background: rgb(255, 255, 255);
+   background: linear-gradient(
+     -45deg,
+     rgba(255, 255, 255, 1) 0%,
+     rgba(255, 255, 255, 0) 70%
+   );
+   width: 10px;
+   height: 45px;
+   opacity: 0.3;
+   rotate: 45deg;
+ }
+ 
+ @keyframes loading {
+   0% {
+     width: 0;
+   }
+   80% {
+     width: 100%;
+   }
+   100% {
+     width: 100%;
+   }
+ }
+ 
+ @keyframes blink {
+   0%,
+   100% {
+     opacity: 0;
+   }
+   50% {
+     opacity: 1;
+   }
+ }
+   
+ </style>
+ 
+ <script>	
+     function initLoading() {
+         let loading = document.querySelector(".loading");
+         document.addEventListener('DOMContentLoaded', function() {
+             
+             loading.style.display = "none";
+         });
+     }
+ 
+     initLoading();
+ </script>
     </head>
     <body class="">
     <script>
@@ -283,14 +437,6 @@
         
         <div class="widget-archive--list">
             <div class="archives-year">
-                    <a href="/ReadBook/archives/#2025">
-                        
-                            <span class="year">2025</span>
-                            <span class="count">1</span>
-                        
-                    </a> 
-                </div>
-            <div class="archives-year">
                     <a href="/ReadBook/archives/#2020">
                         
                             <span class="year">2020</span>
@@ -364,65 +510,6 @@
     
 
     <section class="article-list">
-        
-            
-<article class="">
-    <header class="article-header">
-
-    <div class="article-details">
-    
-
-    <div class="article-title-wrapper">
-        <h2 class="article-title">
-            <a href="/ReadBook/p/first-test/">First Test</a>
-        </h2>
-    
-        
-    </div>
-
-    
-    
-    
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">2025-04-27</time>
-            </div>
-        
-
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-                <time class="article-time--reading">
-                    阅读时长: 0 分钟
-                </time>
-            </div>
-        
-    </footer>
-    
-
-    
-</div>
-
-</header>
-</article>
         
             
 <article class="has-image">
@@ -598,6 +685,93 @@
 </header>
 </article>
         
+            
+<article class="has-image">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/ReadBook/p/placeholder-text/">
+                <img src="/ReadBook/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash_hu2018237820240201481.jpg"
+                        srcset="/ReadBook/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash_hu2018237820240201481.jpg 800w, /ReadBook/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash_hu8283485329313927682.jpg 1600w"
+                        width="800" 
+                        height="533" 
+                        loading="lazy"
+                        alt="Featured image of post Placeholder Text" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/ReadBook/categories/test/" style="background-color: #2a9d8f; color: #fff;">
+                Test
+            </a>
+        
+            <a href="/ReadBook/categories/test-with-whitespaces/" >
+                Test With Whitespaces
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/ReadBook/p/placeholder-text/">Placeholder Text</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Lorem Ipsum Dolor Si Amet
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2019-03-09</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 2 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+</article>
+        
     </section>
     <nav class='pagination'>
         
@@ -635,7 +809,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ReadBook/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="/ReadBook/ts/main.b62deda5df88152e1706ad0feb4263fe5387007d38d7f4df7e3479ef8cc0da81.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -647,6 +821,32 @@
         document.head.appendChild(customFont);
     }());
 </script>
+<style>
+  body {
+    background: url('/ReadBook/background/OIP.jpg') no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+</style>
+<div id="particles-js"></div>
+
+<script src=/ReadBook/background/particles.min.js></script>
+<script>
+  particlesJS.load('particles-js', "http://localhost:1313/ReadBook/background/particlesjs-config.json", function() {
+    console.log('particles.js loaded - callback');
+  });
+</script>
+
+<style>
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+</style>
+
 
     </body>
 </html>
