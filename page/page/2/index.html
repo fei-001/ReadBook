@@ -704,11 +704,35 @@
 
 <script>
 const ap = new APlayer({
-    container: document.getElementById('aplayer'),
-    audio: []
+  ...,
+  
+  fixed: true
 });
-</script>
 
+const staticDir = "https://fei-001.github.com.io/ReadBook/"
+const ap = new APlayer({
+    ...,
+    lrcType: 3,
+    audio: [
+        {
+             name: '演员', 
+             artist: '薛之谦', 
+             url: 'static/yanyuan.mp3', 
+             cover: 'cover.jpg', 
+             lrc: 'lrc.lrc', 
+        },
+        {
+            
+            name: '可不可以',
+            artist: '张紫豪',
+            url: staticDir + 'static/nocan.mp3',
+            cover: staticDir + 'cover.jpg',
+            lrc: staticDir + 'lrc.lrc',
+        }
+    ]
+});
+
+</script>
 
     </body>
 </html>
