@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://fei-001.github.com.io/ReadBook/p/k8s%E9%83%A8%E7%BD%B2/'>
 
-<link rel="stylesheet" href="/ReadBook/scss/style.min.d9c6b9ae44217a6e5cf2bc5e757e08aed52fb970feeb71c7ed2346c82f3b7bf5.css"><meta property='og:title' content="k8s部署">
+<link rel="stylesheet" href="/ReadBook/scss/style.min.812900f95ed56c48b721d92cfb12a6bdbc07f7b6cc277805156b7db33a4a77a6.css"><meta property='og:title' content="k8s部署">
 <meta property='og:description' content="k8s部署 使用chinaskills_cloud_paas_v2.1.iso(一带一路金砖比赛)\n1.上传软件包 paas2.1 环境准备 1 2 hostnamectl set-hostname master hostnamectl set-hostname worker 2.挂载 1 2 3 4 mount chinaskills_cloud_paas_v2.1.iso /mnt cp -rf /mnt/* /opt/ umount /mnt/ mv /opt/kubeeasy-v2.0 /usr/bin/kubeeasy 3.安装依赖 1 2 3 4 5 kubeeasy install depend \\ --host 192.168.50.33,192.168.50.44 \\ --user root \\ --password 000000 \\ --offline-file /opt/dependencies/packages.tar.gz 4.安装kubernetes 1 2 3 4 5 6 7 kubeeasy install kubernetes \\ --master 192.168.50.33 \\ --worker 192.168.50.44 \\ --user root \\ --password 000000 \\ --version 1.25.2 \\ --offline-file /opt/kubeeasy.tar.gz ">
 <meta property='og:url' content='https://fei-001.github.com.io/ReadBook/p/k8s%E9%83%A8%E7%BD%B2/'>
 <meta property='og:site_name' content='LuMingFei'>
