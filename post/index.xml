@@ -353,9 +353,8 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;相思本是无凭语 莫向花笺费泪行&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[ !NOTE]&lt;/p&gt;
-&lt;p&gt;见过花开就好 何必在意花落谁家&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;见过花开就好 何必在意花落谁家&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
